@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    line-height:1.6;
+    align-items: stretch;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* for left side */
+.card1{
+    width: 350px;
+    background-color:rgb(98, 156, 163);
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+}
+.profile img{
+    height: 150px;
+    width: 150px;
+    display: block;
+    border-radius: 50%;
+    margin: 40px auto 0 auto;
+    border: 5px solid white;
+    background-color: rgb(98,156,163);
+}
+.card1 h2{
+ font-weight: normal;
+ font-size: 25px;
+ padding-top: 30px;
+ color: white;
+}
+.card1 h4{
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+.card1 p{
+   margin-top: 10px;
+   font-size: 15px;
+   color: white;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px 0;    
+}
+button{
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: rgb(98, 156, 163);
+    background-color: white;   
+}
+/* icon */
+.material-symbols-outlined{
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+/* for right side */
+.content{
+flex: 1;
+padding: 40px;
+}
+.content h1{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 30px;
+    color: rgb(98, 140, 163);
+}
+.content h2{
+ font-weight: normal;
+ font-size: 25px;
+ margin-top:30px;
+ color: rgb(98, 156, 163);
+}
+.content p{
+    margin-left: 30px;
+   font-size: 15px;
+   margin-top: 10px;
+}
+.content ul{
+    margin-left: 30px;
+    list-style-type: circle;
+    margin-top: 10px;
+}
+/* for responsive */
+@media(max-width:768px){
+    body{
+        flex-direction: column;
+    }
+    .card1{
+        width: 100%;
+    }
+}
